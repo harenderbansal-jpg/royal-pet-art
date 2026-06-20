@@ -6,8 +6,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Tailwind CSS Script for instant premium styling */}
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+      </head>
       <body>{children}</body>
     </html>
   )
 }
-
